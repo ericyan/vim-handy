@@ -26,6 +26,7 @@ vnoremap <C-X> "+x
 vnoremap <C-C> "+y
 map <C-V> "+gP
 cmap <C-V> <C-R>+
+inoremap <C-V> <C-R>+
 
 " Use <C-B> for visual block mode (what <C-V> used to do)
 noremap <C-B> <C-V>

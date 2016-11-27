@@ -31,6 +31,9 @@ inoremap <C-V> <C-R>+
 " Use <C-B> for visual block mode (what <C-V> used to do)
 noremap <C-B> <C-V>
 
+" Use <C-L> to clear highlighting
+nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+
 " Write as root with `:w!!`
 cmap w!! w !sudo tee % >/dev/null
 

@@ -34,6 +34,9 @@ noremap <C-B> <C-V>
 " Use <C-L> to clear highlighting
 nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
 
+" Switch between the last two files
+nnoremap <Leader><Leader> <C-^>
+
 " Write as root with `:w!!`
 cmap w!! w !sudo tee % >/dev/null
 

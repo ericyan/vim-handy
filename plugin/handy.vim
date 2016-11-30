@@ -37,6 +37,9 @@ nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
 
+" Unload current buffer
+nnoremap <Leader>c :bdelete<CR>
+
 " Write as root with `:w!!`
 cmap w!! w !sudo tee % >/dev/null
 

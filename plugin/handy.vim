@@ -1,3 +1,52 @@
+" Less delays
+set timeoutlen=300
+set ttimeout
+set ttimeoutlen=100
+
+" Softtabs, 2 spaces
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set shiftround
+
+" Make some context visible while moving around
+set scrolloff=5
+set sidescroll=1
+set sidescrolloff=10
+
+" Be smart when searching
+set ignorecase
+set smartcase
+set magic
+
+" Hide buffers instead of asking if to save them.
+set hidden
+
+" Open new split panes to right and bottom
+set splitright
+set splitbelow
+
+" Prevents inserting two spaces after punctuation on a join (J)
+set nojoinspaces
+
+" Set terminal title
+set title
+
+" Show line numbers on the sidebar.
+set number
+
+" No intro message
+set shortmess+=I
+
+" Ignore modelines (google "vim modeline vulnerability")
+set nomodeline
+
+" Avoid problems with fish shell
+if &shell =~# 'fish$'
+  set shell=/bin/bash
+endif
+
 " Map the `<Leader>` key to `<Space>`
 let mapleader = " "
 

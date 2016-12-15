@@ -53,6 +53,9 @@ let mapleader = " "
 " Get back to normal mode with `jk`
 inoremap jk <Esc>
 
+" Input command with ease
+noremap ; :
+
 " Treat wrapped lines as actual lines
 noremap j gj
 noremap k gk

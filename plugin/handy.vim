@@ -107,3 +107,6 @@ if has("user_commands")
   command! -bang QA qa<bang>
   command! -bang Qa qa<bang>
 endif
+
+" Disable the Ex mode
+nnoremap Q <Nop>
